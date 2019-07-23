@@ -1,0 +1,8 @@
+<input type="text" class="form-control" [(ngModel)]="dataBind">
+<br>
+<button 
+    class="btn btn-success"
+    [disabled]="!allowNewServer"
+    (click) = "onCreateserver()">Submit</button>
+
+<p>{{ dataBind }} {{onClickdata}}</p> 
