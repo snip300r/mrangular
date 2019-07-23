@@ -5,4 +5,4 @@
     [disabled]="!allowNewServer"
     (click) = "onCreateserver()">Submit</button>
 
-<p>{{ dataBind }} {{onClickdata}}</p> 
+<p *ngIf = "serverCreated">{{ dataBind }} {{onClickdata}}</p> 

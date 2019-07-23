@@ -9,7 +9,7 @@ export class ServersComponent implements OnInit {
 
   onClickdata:string = "";
   allowNewServer = false;
-  
+  serverCreated = false
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -20,7 +20,8 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateserver() {
-    return this.onClickdata = "Click";
+    return this.serverCreated = true;
+    // return this.onClickdata = "Click";
   }
 
 }
